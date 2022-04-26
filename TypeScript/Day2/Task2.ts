@@ -52,17 +52,18 @@ class Product
     {
         console.log("Product Id: " + this.ProductID);  
         console.log("Product Name: " + this.ProductName);  
-        console.log("Product Name: " + this.ProductName);  
+        console.log("Product UnitPrice: " + this.UnitPrice);  
+        console.log("Product Quantity: " + this.Quantity);  
     }
 }
 
 
 let prodObj:Product = new Product(1234,"T-shirt",2,500);
 prodObj.showDetails();
-let prodObj2:Product = new Product(12345);
-prodObj2.ProductName = "Mobile"; 
-prodObj2.Quantity = 1; 
-prodObj2.UnitPrice = 10000; 
+ let prodObj2:Product = new Product(12345);
+ prodObj2.ProductName = "Mobile"; 
+ prodObj2.Quantity = 1; 
+ prodObj2.UnitPrice = 10000; 
 
-prodObj2.showDetails();
+ prodObj2.showDetails();
 
