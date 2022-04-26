@@ -64,5 +64,5 @@ prodObj2.ProductName = "Mobile";
 prodObj2.Quantity = 1; 
 prodObj2.UnitPrice = 10000; 
 
-prodObj.showDetails();
+prodObj2.showDetails();
 
