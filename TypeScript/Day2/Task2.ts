@@ -64,6 +64,6 @@ prodObj.showDetails();
  prodObj2.ProductName = "Mobile"; 
  prodObj2.Quantity = 1; 
  prodObj2.UnitPrice = 10000; 
-
+ console.log("------------------------------------------");  
  prodObj2.showDetails();
 
