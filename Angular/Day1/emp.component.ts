@@ -12,5 +12,6 @@ export class EmpComponent  {
   public esalary:number  = 75000;
   public edept:number = 10;
   public ejob:string = "Manager";
-
+  imageSrc = 'https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png'  
+   imageAlt = 'Employee'
 }
