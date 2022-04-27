@@ -1,0 +1,9 @@
+How to insert image in angular ?
+add image in assets folder and use follwing line in html
+<img src="{{imageSrc}}" alt="{{imageAlt}}" />
+we can also store the path in component.ts file or can directly pass in the image tag as a static value.
+
+How to get indexes in *ngFor?
+Ans :-
+*ngFor="let product of products;
+        index as indexOfelement;"
