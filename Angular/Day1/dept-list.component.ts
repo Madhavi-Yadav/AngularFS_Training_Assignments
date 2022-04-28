@@ -48,8 +48,11 @@ export class DeptListComponent implements OnInit {
 
   delete_click(dno:number)
   {
-    let index = this.deptsArray.findIndex(item => item.deptno == dno);
+    if(confirm("Are you sure you want to delete this entry?")) {
+      let index = this.deptsArray.findIndex(item => item.deptno == dno);
     this.deptsArray.splice(index, 1);
+  }
+   
   }
 
   select_click(dno:number)
