@@ -26,11 +26,12 @@ export class DeptListComponent implements OnInit {
 
   updateDept_click(dno:number)
   {
-    //let deptObj:any = this.deptsArray.find(item => item.deptno == dno);
+    if(confirm("Are you sure you want to update this entry?")) {
     let objIndex = this.deptsArray.findIndex((obj => obj.deptno == dno));
     this.deptsArray[objIndex].dname =  this.dname ;
     this.deptsArray[objIndex].loc =  this.loc ;
     this.clear();
+    }
   }
 
   addDept_click()
