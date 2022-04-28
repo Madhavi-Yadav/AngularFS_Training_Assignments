@@ -13,7 +13,7 @@ export class DeptListComponent implements OnInit {
   loc:string = "";
 
   deptsArray:Dept[] = [
-    {deptno : 10, dname : "Accounts",  loc :  "Hyd"} ,
+    {deptno : 10, dname : "Accounts",  loc :  "Banglore"} ,
     {deptno : 20, dname : "Sales",  loc :  "Pune"},
     {deptno : 30, dname : "Marketing",  loc :  "Hyd"}
   ];
