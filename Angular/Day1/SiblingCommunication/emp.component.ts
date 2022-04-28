@@ -25,8 +25,6 @@ export class EmpComponent implements OnChanges  {
 
    ngOnChanges(): void {
     // alert(this.colname);
-    
-    let sortCol = Object.keys(this.empObj[0]).find(e=>e == this.colname);
   
    this.empObj.sort((a:any,b:any)=>a[this.colname] < b[this.colname] ? -1 : 1);
       
