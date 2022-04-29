@@ -1,0 +1,34 @@
+<h3>Developing Custom Pipes for filter in Angular</h3>
+<hr/>
+
+
+Min Value  :
+<input [(ngModel)]="filterMin"  />
+
+Max Value  :  <input [(ngModel)]="filterMax"  />
+<br/><br/>
+
+<button (click)="filterData_click()">Filter Data</button>
+ <br/><br/>
+
+<div >
+    <table width="500"  cellspacing="0"  cellpadding="3"  border="2">
+        <tr>
+          <th>Emp Number</th>
+          <th>Emp Name</th>
+          <th>Emp Job</th>
+          <th>Emp Salary</th>
+          <th>Emp Deptno</th>
+        </tr>
+      
+        <tr *ngFor="let item of empObj | filterRange: min : max ">
+            <td>{{item.eid}}</td>
+            <td>{{item.ename | titlecase}}</td>
+            <td>{{item.job | uppercase}}</td>
+            <td>{{item.salary}}</td>
+            <td>{{item.dept}}</td>
+        </tr>
+      </table>
+      
+</div>
+
