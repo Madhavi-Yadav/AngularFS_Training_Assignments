@@ -40,11 +40,13 @@ export class EmpComponent  {
 
      this.empsArray = this._dataService.AddEmp(empObj);
      this.clear()
+     alert("Record added successfully.");
   }
 
   removeData_click(eno:number)
   {
      this.empsArray = this._dataService.RemoveEmp(eno);
+     alert("Record removed successfully.");
   }
 
   clear()
@@ -57,5 +59,3 @@ export class EmpComponent  {
 
   }
  }
-
-
