@@ -1,0 +1,16 @@
+   
+<h3>Working with slice pipe in Angular</h3>
+<hr/>
+
+<button  [disabled]="isDisable" (click)="nextItems_click()">Next >> </button>
+<br/><br/>
+<div class="card" *ngFor="let item of UserArray | slice : start : end" >
+    <div class="container">
+        <h5><b>{{item.userid}}</b></h5>
+       <h4 style="color: olivedrab;"><b>{{item.uname | titlecase}}</b></h4>
+      <p>{{item.email | lowercase}}</p>
+      <p>Gender :{{item.gender | genderpipe}} </p>
+    </div>
+  </div>
+
+
