@@ -1,0 +1,42 @@
+<h3>Working with Services in Angular</h3>
+<hr/>
+
+<input type="text"  [(ngModel)]="eid"  placeholder="Emp ID"  />
+<input type="text"  [(ngModel)]="ename"  placeholder="Emp Name"  />
+<input type="text"  [(ngModel)]="job"  placeholder="Job"  />
+<input type="text"  [(ngModel)]="salary"  placeholder="Salary"  />
+<input type="text"  [(ngModel)]="dept"  placeholder="Dept"  />
+<hr/>
+
+<button class="button" (click)="addData_click()">Add Data</button>
+
+<button class="button" (click)="getData_click()">Get Data</button>
+ <br/><br/>
+ <table width="500"  cellspacing="0"  cellpadding="3"  border="2">
+  <tr>
+    <th>Emp Number</th>
+    <th>Emp Name</th>
+    <th>Emp Job</th>
+    <th>Emp Salary</th>
+    <th>Emp Deptno</th>
+    <th>Remove Data</th>
+  </tr>
+
+  <tr *ngFor="let item of empsArray">
+      <td>{{item.eid}}</td>
+      <td>{{item.ename | titlecase}}</td>
+      <td>{{item.job | uppercase}}</td>
+      <td>{{item.salary | currency}}</td>
+      <td>{{item.dept}}</td>
+      <td>
+        <a class="lnk" title="Remove" align="ceter"  (click)="removeData_click(item.eid)" href="javascript:void(0);">
+            <img src="assets/images/delete.png" alt="" width="20" />
+          </a>
+      </td>
+  </tr>
+  <tr *ngIf="empsArray.length == 0">
+    <td colspan="5">** No departments avaialble in the database</td>
+  </tr>
+</table>
+
+<hr/>
