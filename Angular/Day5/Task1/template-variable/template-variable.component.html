@@ -1,0 +1,24 @@
+
+
+    <div class="container">
+    <h2 style="margin:5px">My To Do List</h2>
+    <input type="text"  [(ngModel)]="newtask"  placeholder="To Do Task"  />
+       
+    <button type="button" (click)="newElement()" class="addBtn">Add</button>
+    </div>
+ 
+  
+  <ul id="myUL">
+    <li  *ngFor="let item of ToDoListArray; let i = index;" [ngClass]="{'checked': item.IsChecked == true}">
+       {{item.Task}} 
+       {{item.IsChecked}} 
+       
+           <input type="checkbox" style="float: right;"  [checked]="item.IsChecked"  (change)="onCheckboxChange(item.Task)" >
+           <img src="assets/images/delete.png" (click)="delete_click(item.index)" style="margin-right:30px;float:right;" width="30">
+       
+    </li>
+  </ul>
+  
+
+  <button class="button" (click)="checkAll_click()" >Delete Done tasks</button> 
+  <button class="button" (click)="deleteAll_click()" style="float:right;">Delete All Tasks</button>
