@@ -107,7 +107,7 @@ export class DataService {
   {
     return this.httpObj.get<any[]>(this.baseUrl).pipe(
       map(res => {
-        return  res.sort((a, b) => b.salary - a.salary ? 1 :-1);
+        return res.sort((a, b) => (a.sal > b.sal) ? 1 : -1);
     })
     );
   }
