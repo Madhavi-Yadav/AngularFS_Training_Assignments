@@ -1,0 +1,62 @@
+{
+  "emp": [
+    {
+      "empno": 6369,
+      "ename": "SMITH",
+      "job": "CLERK",
+      "deptno": 20,
+      "sal": "1000",
+      "id": 6369
+    },
+    {
+      "id": 6499,
+      "ename": "ALLEN",
+      "job": "SALESMAN",
+      "sal": 1600,
+      "deptno": 30
+    },
+    {
+      "id": 6521,
+      "ename": "WARD",
+      "job": "ANALYST",
+      "sal": 1250,
+      "deptno": 30
+    },
+    {
+      "id": 6566,
+      "ename": "JONES",
+      "job": "MANAGER",
+      "sal": 2975,
+      "deptno": 20
+    },
+    {
+      "id": 7654,
+      "ename": "MARTIN",
+      "job": "SALESMAN",
+      "sal": 1250,
+      "deptno": 30
+    },
+    {
+      "id": 7698,
+      "ename": "BLAKE",
+      "job": "MANAGER",
+      "sal": 2850,
+      "deptno": 30
+    },
+    {
+      "id": 7782,
+      "ename": "CLARK",
+      "job": "MANAGER",
+      "sal": 2450,
+      "deptno": 10
+    },
+    {
+      "empno": 0,
+      "ename": "Emiley",
+      "deptno": "20",
+      "sal": "20000",
+      "job": "Clerk",
+      "id": 7783
+    }
+  ]
+}
