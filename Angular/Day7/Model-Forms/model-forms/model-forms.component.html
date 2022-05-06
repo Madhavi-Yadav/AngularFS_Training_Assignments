@@ -1,0 +1,70 @@
+
+<h3> Angular Form Validations using  Model Driven  </h3>
+<hr/>
+
+<form [formGroup]="RegForm" (submit)="submit_click()">
+  <fieldset>
+      <legend>Customer Registration Form</legend>
+
+      
+      Owner Name <span class="mandatory">*</span> :
+      <input type="text" formControlName="oname"  />
+      <span *ngIf="RegForm.controls['oname'].invalid && RegForm.controls['oname'].dirty" class="error">Owner Name is required</span>
+
+      <br/><br/>
+
+      Contact Number <span class="mandatory">*</span> :
+      <input type="text" formControlName="cnumber"  />
+      <span *ngIf="RegForm.controls['cnumber'].invalid && RegForm.controls['cnumber'].dirty" class="error">Contact Number is required</span>
+      <br/><br/>
+
+     Owner E-mail <span class="mandatory">*</span> :
+    <input   formControlName="email"  />
+    <span  class="error"  *ngIf="RegForm.controls['email'].invalid && RegForm.controls['email'].dirty">
+      Enter proper e-mail id.
+    </span>
+    <br><br>
+
+      Vehicle Registration Number  <span class="mandatory">*</span> :
+      <input formControlName="vregno"  />
+      <span  class="error"  *ngIf="RegForm.controls['vregno'].invalid && RegForm.controls['vregno'].dirty">
+        Enter proper vehicle registration number
+    </span>
+    <br><br>
+  
+
+    Address <span class="mandatory">*</span> :
+    <input 	formControlName="address"  />
+      <span  class="error"  *ngIf="RegForm.controls['address'].invalid && RegForm.controls['address'].dirty">
+        Address is required.
+      </span>
+    <br><br>
+
+    Model :
+    <input 	formControlName="model"  />
+      <span  class="error"  *ngIf="RegForm.controls['model'].invalid && RegForm.controls['model'].dirty">
+        Enter a proper Model number with 10 characters.
+      </span>
+    <br><br>
+
+    Color <span class="mandatory">*</span> :
+    <input 	formControlName="color"  />
+      <span  class="error"  *ngIf="RegForm.controls['color'].invalid && RegForm.controls['color'].dirty">
+        Color is required.
+      </span>
+    <br><br>
+    Year :
+    <input 	formControlName="year"  />
+      <span  class="error"  *ngIf="RegForm.controls['year'].invalid && RegForm.controls['year'].dirty">
+        Enter a proper year, should be between 2012 to 2022.
+      </span>
+    <br><br>
+
+  
+
+    <button [disabled]="RegForm.invalid">Register</button>
+  
+
+      
+  </fieldset>
+</form>

@@ -1,0 +1,23 @@
+.error,.mandatory {   color : Red;  }
+input {
+    padding: 6px 8px;
+    margin: 6px 8px;
+    box-sizing: border-box;
+  }
+
+  /* button {
+    background-color: #131413; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  } */
+
+  
+  
