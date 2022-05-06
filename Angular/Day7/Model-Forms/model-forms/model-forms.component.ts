@@ -16,7 +16,8 @@ export class ModelFormsComponent implements OnInit {
     address : new FormControl("", Validators.required),
     model:new FormControl("", Validators.pattern("[a-z]{1,10}")),
     color:new FormControl("", Validators.required),
-    year:new FormControl("", Validators.pattern("\\b(201[2-9]|2020|202[1-2])\\b")),
+    //year:new FormControl("", Validators.pattern("\\b(201[2-9]|2020|202[1-2])\\b")),
+    year:new FormControl("", [Validators.min(2012),Validators.max(2022)])
   });
 
  constructor() { }
