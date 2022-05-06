@@ -1,0 +1,27 @@
+<style>
+    div{
+        margin: 5px;
+    }
+</style>   
+   
+   <p    appMyShadow> Attribute Custom Directive Text </p>    
+    <p    [appMyShadow]=" 'Blue' "> Attribute Custom Directive Text </p>
+    <p    [appMyShadow]=" 'Green' "> Attribute Custom Directive Text </p>
+
+
+
+    <div *adminPanel="true">
+       This content is for scott Admin
+    </div>
+
+    <div   *adminPanel="true">
+        This content is for Smith Admin
+    </div>
+
+    <div   *adminPanel="false">
+        This content is for Sam Admin
+    </div>
+
+    <div   *adminPanel="true">
+        This content is for Robert Admin
+    </div>
