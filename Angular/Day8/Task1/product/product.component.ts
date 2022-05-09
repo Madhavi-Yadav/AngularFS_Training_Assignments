@@ -15,11 +15,11 @@ export class ProductComponent implements OnInit {
   prodObj:any = {};
 
    prodArray:Product[] = [
-     {pid : 101, pname : "TV",  category :  "Electronic", price:15000, qty:1} ,
-     {pid : 102, pname : "Speaker",  category :  "Gadget" , price:5000, qty:2},
-     {pid : 103, pname : "Mobile",  category :  "Electronic" , price:20000, qty:1},
-     {pid : 104, pname : "Camera",  category :  "Gadget" , price:10000, qty:2},
-     {pid : 105, pname : "Fan",  category :  "Electronic" , price:9000, qty:1},
+     {pid : 101, pname : "TV",  category :  "Electronic", price:15000, qty:1, picture:"tv.png"} ,
+     {pid : 102, pname : "Speaker",  category :  "Gadget" , price:5000, qty:2, picture:"speakers.png"},
+     {pid : 103, pname : "Mobile",  category :  "Electronic" , price:20000, qty:1, picture:"mobile.png"},
+     {pid : 104, pname : "Camera",  category :  "Gadget" , price:10000, qty:2, picture:"shopping.png"},
+     {pid : 105, pname : "Fan",  category :  "Electronic" , price:9000, qty:1, picture:"fan.png"},
    ];
 
 
