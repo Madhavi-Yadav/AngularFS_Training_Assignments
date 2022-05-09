@@ -3,14 +3,15 @@
   </h3>
   <div class="container">
       <div class="content">
-          <div class="card" *ngFor="let item of prodObj">
-            <h4 style="color: olivedrab;"><b>{{item.pname}}</b></h4>
-            <p>{{item.category}}</p>
-            <p>Price :{{item.price}} </p>
-            <p>Qty : {{item.qty}}   </p>
-              
-           </div>
+        <div  class="card" *ngFor="let item of prodObj">
+            <img height="150" width="150" [src] = "'/assets/images/'+item.picture" alt="Avatar" >
+            <div class="container">
+                <h4 style="color: olivedrab;"><b>{{item.pname}}</b></h4>
+                <p>{{item.category}}</p>
+                <p>Price :{{item.price}} </p>
+                <p>Qty : {{item.qty}}   </p>
+            </div>
+        </div>
       </div>
   </div>
-  
-
+ 
