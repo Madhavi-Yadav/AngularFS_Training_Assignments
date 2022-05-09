@@ -8,7 +8,7 @@
   text-align: center;
   color :  black;
   float: left;
-  width:45%;
+  width:20%;
 }
   
   /* On mouse-over, add a deeper shadow */
@@ -16,7 +16,7 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  /* Add some padding inside the card container
+  Add some padding inside the card container
   .container {
     padding: 2px 16px;
       border-radius : 10px;
@@ -29,4 +29,4 @@
   input{
 
     margin: 2px; padding: 5px;
-  } */
+  }
