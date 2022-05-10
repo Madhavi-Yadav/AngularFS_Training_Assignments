@@ -1,0 +1,15 @@
+<h3>Testing Angular Components</h3>
+<hr/>
+
+<fieldset>
+<legend>Product Cart</legend>
+Product Name  :    <input  type="text"  [(ngModel)]="pname"  />
+<br/><br/>
+Quantity  :   <input  type="text" [(ngModel)]="qty" />
+<br/><br/>
+Price  :   <input  type="text" [(ngModel)]="amt" />
+<br/><br/>
+<button (click)="getTotalAmount()">Login</button>
+<p>{{total}}</p>
+
+</fieldset>
