@@ -62,13 +62,15 @@ describe('ProdTestComponent', () => {
      expect(strOutput).toBe('Total Amount : NaN');
    });
 
-  // 5.Testing two-way data binding is working or not
+   // 5.Testing two-way data binding is working or not
   it('5. should set the amount textbox value to component property for amount', () => {
 
     let inputArray = fixture.nativeElement.querySelectorAll('input');
     inputArray[2].value = 500;
+
+    inputArray[2].dispatchEvent(new Event('input'));
     
-    expect(inputArray[2].value).toBe('500');
+    expect(component.amt).toBe('500');
   });
 
 //   // 6.Testing Check the two-way data binding is working or not --- set value to textbox amt
@@ -79,9 +81,7 @@ describe('ProdTestComponent', () => {
 
     inputArray[2].dispatchEvent(new Event('input'));
 
-    console.log(component.amt)
-
-    expect(component.amt).toBe('500');
+    expect(inputArray[2].value).toBe('500');
     
   });
 
