@@ -74,7 +74,7 @@ describe('ProdTestComponent', () => {
   });
 
 //   // 6.Testing Check the two-way data binding is working or not --- set value to textbox amt
-   it('6. should set the value "1000" to amt textbox', () => {
+   it('6. should set the value "500" to amt textbox', () => {
 
     let inputArray = fixture.nativeElement.querySelectorAll('input');
     inputArray[2].value = 500 ;
