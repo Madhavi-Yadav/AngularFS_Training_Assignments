@@ -1,0 +1,9 @@
+<h3>
+    Product Details 
+    </h3>
+<div>
+		<app-prod-child-test  *ngFor="let item of prodArray"
+								[prodObj]="item"
+								(onProdRemoved)="removeProd($event)">
+		</app-prod-child-test>
+</div>
